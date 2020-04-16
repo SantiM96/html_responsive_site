@@ -1,0 +1,231 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Global **/
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+/** Utilities **/
+.center-text {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+
+    /** Button **/
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+    }
+}
+.btn-primary {
+    background-color: black;
+}
+.btn-secondary {
+    background-color: #784d3c;
+}
+
+    /** Header **/
+@media (min-width: 768px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.site-header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+}
+.site-header h1 span {
+    font-weight: 700;
+}
+.navegation a {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+    .navegation a {
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegation a:last-of-type {
+        margin: 0;
+    }
+}
+.header-text {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header-text {
+        margin-top: 15.8rem;
+    }
+}
+.header-text h2 {
+    font-size: 4rem;
+}
+.header-text p {
+    font-size: 2rem;
+}
+
+    /** Main Content -HOME- **/
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog
+.courses {
+    flex: 0 0 100%;
+    width: 60%;
+}
+.courses {
+    order: -1;
+}
+.courses h2 {
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .main-content {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+    .blog {
+        flex: 0 0 65%;
+    }
+    .courses {
+        flex: 0 0 calc(35% - 1rem);
+        order: 2;
+        margin-left: 2rem;
+    }
+
+}
+.entry-blog {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #bbbbbb;
+}
+.entry-blog:last-of-type {
+    border: none;
+}
+
+    /** Sidebar Courses **/
+.courses-list {
+    padding: 0;
+    list-style: none;
+}
+.course {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #bbbbbb;
+}
+.course:last-of-type {
+    border-bottom: none;
+}
+.course p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.course p span {
+    font-weight: 400;
+}
+
+    /** Footer **/
+.site-footer {
+    background-color: black;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+.site-footer a {
+    text-decoration: none;
+}
+.site-footer p {
+    color: white;
+    font-family:  'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+}
+.site-footer p span {
+    font-weight: 700;
+}
+.site-footer nav a {
+    color: white;
+}
+
+
+
+    /** --Other Pages-- **/
+    /** Nosotros **/
+.about-us h2 {
+    margin: 5rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column-6 {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+}

@@ -50,6 +50,10 @@ img {
     .grid {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .center-columns {
+        justify-content: center;
     }
     .columns-4 {
         flex: 0 0 calc(33.3% - 0.5rem);
@@ -59,6 +63,12 @@ img {
     }
     .columns-8 {
         flex: 0 0 calc(66.6% - 0.5rem);
+    }
+    .columns-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columns-12 {
+        flex: 0 0 100%;
     }
 }
 
@@ -74,10 +84,15 @@ img {
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
+    flex: 0 0 100%;
+}
+.btn:hover {
+    cursor: pointer;
 }
 @media (min-width: 768px) {
     .btn {
         display: inline-block;
+        flex: 0 0 auto;
     }
 }
 .btn-primary {
@@ -264,4 +279,34 @@ img {
 }
 .content-courses article {
     margin-top: 4rem;
+}
+
+    /** Contacto **/
+@media (min-width: 768px) {
+    .contact-form {
+        margin-top: -5rem;
+        background-color: #ffffff;
+        padding: 5rem;
+    }
+}
+.contact-form .camp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.contact-form .camp label {
+    flex: 0 0 8rem;
+}
+.contact-form .camp input:not([type="submit"]),
+.contact-form .camp textarea {
+    flex: 1;
+    border: 2px solid #bbbbbb;
+    padding: 1rem;
+}
+.contact-form .camp textarea {
+    height: 20rem;
+}
+.contact-form .send {
+    display: flex;
+    justify-content: flex-end;
 }
